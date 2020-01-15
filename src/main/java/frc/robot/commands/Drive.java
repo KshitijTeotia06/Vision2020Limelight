@@ -15,6 +15,7 @@ public class Drive extends CommandBase {
    * Creates a new Drive.
    */
   public Drive() {
+    Robot.driveTrain.move(Robot.m_oi.returnAxis(RobotMap.JOYSTICK_Y), Robot.m_oi.returnAxis(RobotMap.JOYSTICK_X));
     // Use addRequirements() here to declare subsystem dependencies.
   }
 
