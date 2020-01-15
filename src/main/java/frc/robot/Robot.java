@@ -33,7 +33,7 @@ public class Robot extends TimedRobot {
     SendableChooser<Command> chooser = new SendableChooser<>();
     DriveTrain drive = new DriveTrain();
 
-    public static OI oi;
+    public static OI m_oi;
     
     public static myLimeLight mylimelight;
     
@@ -50,7 +50,7 @@ public class Robot extends TimedRobot {
         //(which it very likely will), subsystems are not guaranteed to be
         // constructed yet. Thus, their requires() statements may grab null
         // pointers. Bad news. Don't move it.
-        oi = new OI();
+        m_oi = new OI();
 
         // Add commands to Autonomous Sendable Chooser
         
@@ -96,7 +96,7 @@ public class Robot extends TimedRobot {
     }
 
     public void move(double power, double offset){
-        drive.
+        
     }
     /**
      * This function is called periodically during operator control
