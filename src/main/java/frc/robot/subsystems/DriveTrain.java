@@ -16,13 +16,12 @@ import frc.robot.commands.Drive;
  * Add your docs here.
  */
 public class DriveTrain extends Subsystem {
-  private TalonSRX l1;
-  private TalonSRX l2;
-  private TalonSRX r1;
-  private TalonSRX r2;
+  private static TalonSRX l1;
+  private static TalonSRX l2;
+  private static TalonSRX r1;
+  private static TalonSRX r2;
   // Put methods for controlling this subsystem
   // here. Call these from Commands.
-
 
   @Override
   public void initDefaultCommand() {
@@ -35,9 +34,8 @@ public class DriveTrain extends Subsystem {
     // Set the default command for a subsystem here.
   }
 
-  
-  public void move(double p, double turn){
-    l1.set(ControlMode.PercentOutput, p+turn);
+  public static void move(double p, double turn) {
+    l1.set(ControlMode.PercentOutput, p + turn);
     l2.set(ControlMode.PercentOutput, p+turn);
     r1.set(ControlMode.PercentOutput, p-turn);
     r2.set(ControlMode.PercentOutput, p-turn);

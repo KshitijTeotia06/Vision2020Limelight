@@ -79,6 +79,12 @@ public class OI {
         return myJoystick;
     }
 
+    public double returnAxis(int bruh) {
+        double i = 1;
+        return i;
+    }
+
+
 	
 }
 
