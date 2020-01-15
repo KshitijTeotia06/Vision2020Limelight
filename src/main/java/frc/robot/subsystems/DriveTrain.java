@@ -36,6 +36,11 @@ public class DriveTrain extends Subsystem {
   }
 
   public void move(){
-    l1.setMode
+    public void move(double p, double turn){
+      l1.set(ControlMode.PercentOutput, p+turn);
+      l2.set(ControlMode.PercentOutput, p+turn);
+      r1.set(ControlMode.PercentOutput, p-turn);
+      r2.set(ControlMode.PercentOutput, p-turn);
+    }
   }
 }
