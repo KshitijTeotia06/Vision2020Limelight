@@ -7,6 +7,10 @@
 
 package frc.robot.subsystems;
 
+import com.ctre.phoenix.motorcontrol.ControlMode;
+import com.ctre.phoenix.motorcontrol.NeutralMode;
+import com.ctre.phoenix.motorcontrol.can.TalonSRX;
+import com.ctre.phoenix.motorcontrol.can.VictorSPX;
 import edu.wpi.first.wpilibj.command.Subsystem;
 
 /**
@@ -14,7 +18,9 @@ import edu.wpi.first.wpilibj.command.Subsystem;
  */
 public class DriveTrain extends Subsystem {
   // Put methods for controlling this subsystem
-  // here. Call these from Commands.
+  // here. Call these from Commands
+  
+  TalonSRX L1, L2
 
   @Override
   public void initDefaultCommand() {
