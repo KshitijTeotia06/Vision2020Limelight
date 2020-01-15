@@ -16,6 +16,7 @@ import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.Scheduler;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
+import frc.robot.subsystems.DriveTrain;
 import frc.robot.subsystems.myLimeLight;
 
 
@@ -30,6 +31,7 @@ public class Robot extends TimedRobot {
 
     Command autonomousCommand;
     SendableChooser<Command> chooser = new SendableChooser<>();
+    DriveTrain drive = new DriveTrain();
 
     public static OI oi;
     
@@ -93,6 +95,9 @@ public class Robot extends TimedRobot {
         if (autonomousCommand != null) autonomousCommand.cancel();
     }
 
+    public void move(double power, double offset){
+        drive.
+    }
     /**
      * This function is called periodically during operator control
      */
