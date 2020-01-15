@@ -32,6 +32,10 @@ public class myLimeLight extends Subsystem {
     public LimeLight getLimeLight(){
         return _limelight;
     }
+
+    public void getimage(){
+        
+    }
    
 }
 
