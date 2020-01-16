@@ -7,8 +7,8 @@
 
 package frc.robot.subsystems;
 
+import com.ctre.phoenix.motorcontrol.ControlMode;
 import com.ctre.phoenix.motorcontrol.can.TalonSRX;
-import edu.*;
 import edu.wpi.first.wpilibj.command.Subsystem;
 import frc.robot.RobotMap;
 import frc.robot.commands.Drive;
@@ -36,9 +36,9 @@ public class DriveTrain extends Subsystem {
 
   public static void move(double p, double turn) {
     l1.set(ControlMode.PercentOutput, p + turn);
-    l2.set(ControlMode.PercentOutput, p+turn);
-    r1.set(ControlMode.PercentOutput, p-turn);
-    r2.set(ControlMode.PercentOutput, p-turn);
+    l2.set(ControlMode.PercentOutput, p + turn);
+    r1.set(ControlMode.PercentOutput, p - turn);
+    r2.set(ControlMode.PercentOutput, p - turn);
   }
   
 }
